@@ -1,0 +1,45 @@
+.marquee-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  scroll-snap-type: x mandatory; 
+  scroll-behavior: smooth; 
+  margin-top: 50px;
+}
+
+.marquee-wrapper {
+  display: flex;
+  transition: transform 10s ease;
+  will-change: transform;
+}
+
+.marquee-wrapper:hover{
+  animation-play-state: paused;
+}
+
+.marquee-box {
+  position: relative;
+  margin-right: 10px;
+  scroll-snap-align: start;
+}
+
+.marquee-img {
+  pointer-events: none;
+  height: 340px;
+  user-select: none;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.marquee-img:active{
+  cursor:grab;
+}
+
+.marquee-wrapper.marquee-grabbing {
+  cursor: grabbing; /* Apply the grabbing cursor when dragging */
+}
+
+.marquee-container.marquee-grabbing {
+  cursor: grabbing; /* Apply the grabbing cursor when dragging */
+}

@@ -1,0 +1,155 @@
+.our-partner {
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+    overflow-x: hidden;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.our-partner-content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    position: relative;
+}
+
+.top div:first-child {
+    font-size: 12px;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    color: #8f8f8f;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.top div:nth-child(2) {
+    font-size: 48px;
+    text-align: center;
+}
+
+.top div:nth-child(3) {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1.4;
+    width: 60%;
+    color: var(--subheading--);
+}
+
+@keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+.logos {
+    overflow: hidden;
+    padding: 30px 0px;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+  }
+  
+
+/* .brand-logo {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    max-width: 100%;
+}
+
+*/
+
+.logo_items {
+    display: flex;
+    align-items: center;
+    animation: slides 34s linear infinite;
+}
+
+.logo_items img {
+    width: 120px;
+    margin: 0 12px;
+    filter: var(--partner-logo);
+}
+
+.logo_items img:nth-child(3),
+.logo_items img:nth-child(12) {
+    width: 80px;
+    filter: var(--partner-logo);
+}
+
+.logo_items img:nth-child(1),
+.logo_items img:nth-child(2),
+.logo_items img:nth-child(10),
+.logo_items img:nth-child(11) {
+    width: 50px;
+    filter: var(--partner-logo);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .top div:nth-child(2) {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 768px) {
+    .our-partner-content {
+        width: 95%;
+    }
+
+    .top div:nth-child(2) {
+        font-size: 36px;
+    }
+
+    .brand-logo-track img:nth-child(1),
+    .brand-logo-track img:nth-child(2),
+    .brand-logo-track img:nth-child(3),
+    .brand-logo-track img:nth-child(11),
+    .brand-logo-track img:nth-child(12),
+    .brand-logo-track img:nth-child(13) {
+        width: 60px;
+        margin: 0 15px;
+    }
+
+    .brand-logo {
+        width: 95%;
+    }
+}
+
+@media (max-width: 450px) {
+    .top div:nth-child(2) {
+        font-size: 28px;
+    }
+
+    .brand-logo {
+        width: 99%;
+        padding: 16px 0;
+    }
+
+    .brand-logo-track img {
+        width: 85px;
+    }
+
+    .our-partner{
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .top div:nth-child(2) {
+        font-size: 24px;
+    }
+}

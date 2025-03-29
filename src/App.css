@@ -1,0 +1,166 @@
+html {
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.divider {
+    height: 1px;
+    width: 98%;
+    background-color: #1a1a1a;
+    margin: 30px auto;
+}
+
+
+
+.for-light-theme {
+    color: black;
+    --subheading--: #616161;
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    --nav-background: white;
+    --nav-shadow: "none";
+    --nav-down: rgb(58, 58, 58, 0.4);
+    /* --partner-logo: grayscale(1) brightness(0) sepia(1) saturate(300%) hue-rotate(0deg); */
+    --border-color: black;
+}
+
+@media (max-width: 800px) {
+
+    .our-partner .top div:nth-child(1),
+    .our-partner-del .top-del div:nth-child(1),
+    .our-partner-2 .top-2 div:nth-child(1),
+    .our-partner-3 .top-3 div:nth-child(1),
+    .our-partner-4 .top-4 div:nth-child(1),
+    .our-partner-5 .top-5 div:nth-child(1),
+    .our-partner-6 .top-6 div:nth-child(1),
+    .our-partner-7 .top-7 div:nth-child(1) {
+        font-weight: 600;
+        color: #7f8182;
+    }
+
+    .ww-content .our-partner-4 {
+        padding-bottom: 40px;
+    }
+
+    .our-partner .top div:nth-child(2),
+    .our-partner-del .top-del div:nth-child(2),
+    .our-partner-2 .top-2 div:nth-child(2),
+    .our-partner-3 .top-3 div:nth-child(2),
+    .our-partner-4 .top-4 div:nth-child(2),
+    .our-partner-5 .top-5 div:nth-child(2),
+    .our-partner-6 .top-6 div:nth-child(2),
+    .our-partner-7 .top-7 div:nth-child(2) {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .our-partner .top div:nth-child(3),
+    .our-partner-del .top-del div:nth-child(3),
+    .our-partner-2 .top-2 div:nth-child(3),
+    .our-partner-3 .top-3 div:nth-child(3),
+    .our-partner-4 .top-4 div:nth-child(3),
+    .our-partner-5 .top-5 div:nth-child(3),
+    .our-partner-6 .top-6 div:nth-child(3),
+    .our-partner-7 .top-7 div:nth-child(3) {
+        font-size: 16.5px;
+        margin-top: 0px;
+
+    }
+}
+
+@media (max-width: 450px) {
+
+    .our-partner .top div:nth-child(1),
+    .our-partner-del .top-del div:nth-child(1),
+    .our-partner-2 .top-2 div:nth-child(1),
+    .our-partner-3 .top-3 div:nth-child(1),
+    .our-partner-4 .top-4 div:nth-child(1),
+    .our-partner-5 .top-5 div:nth-child(1),
+    .our-partner-6 .top-6 div:nth-child(1),
+    .our-partner-7 .top-7 div:nth-child(1) {
+        font-weight: 600;
+        color: #7f8182;
+    }
+
+    .ww-content .our-partner-4 {
+        padding-bottom: 40px;
+    }
+
+    .our-partner .top div:nth-child(2),
+    .our-partner-del .top-del div:nth-child(2),
+    .our-partner-2 .top-2 div:nth-child(2),
+    .our-partner-3 .top-3 div:nth-child(2),
+    .our-partner-4 .top-4 div:nth-child(2),
+    .our-partner-5 .top-5 div:nth-child(2),
+    .our-partner-6 .top-6 div:nth-child(2),
+    .our-partner-7 .top-7 div:nth-child(2),
+    .top div:nth-child(3) {
+        font-size: 24px;
+        font-weight: 500 !important;
+        line-height: 1.3;
+    }
+
+    .top-7 div:nth-child(2) {
+        font-size: 24px !important;
+        padding-bottom: 24px;
+        font-weight: 500 !important;
+        line-height: 1.3;
+    }
+
+    .our-partner .top div:nth-child(3),
+    .our-partner-del .top-del div:nth-child(3),
+    .our-partner-2 .top-2 div:nth-child(3),
+    .our-partner-3 .top-3 div:nth-child(3),
+    .our-partner-4 .top-4 div:nth-child(3),
+    .our-partner-5 .top-5 div:nth-child(3),
+    .our-partner-6 .top-6 div:nth-child(3),
+    .our-partner-7 .top-7 div:nth-child(3),
+    .top div:nth-child(3) {
+        font-size: 14.5px !important;
+        margin-top: 2px !important;
+        width: 100% !important;
+        font-weight: 300 !important;
+
+    }
+
+    .top-AboutUs div:first-child,
+    .ww-box-1 div:first-child,
+    .top div:first-child,
+    .top-7 div:first-child {
+        font-weight: 600;
+    }
+
+    .top-7 div:first-child{
+        font-size: 11px !important;
+    }
+
+    .service-heading div:nth-child(2){
+        font-size: 20px !important;
+    }
+
+    #card-area .our-partner-content .top div:first-child{
+        word-spacing: 0px;
+        font-size: 11px;
+    }
+
+    .top div:nth-child(2){
+        font-size: 24px !important;
+    }
+}

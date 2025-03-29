@@ -1,0 +1,17 @@
+.os-section {
+    width: 100vw;
+    height: 100vh;
+    position: relative; /* Default position */
+    top: 0;
+    background-color: aquamarine;
+    transition: position 0.3s ease, top 0.3s ease; /* Smooth transition */
+}
+
+.os-container {
+    margin-top: 250px;
+    width: 80vw;
+    margin: 0 auto;
+    height: 300vh; /* This makes the container scrollable */
+    background-color: rgb(44, 72, 172);
+}
+

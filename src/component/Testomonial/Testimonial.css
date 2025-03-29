@@ -1,0 +1,77 @@
+.our-partner-3 {
+  width: 100%;
+  height: 100%;
+  padding: 40px 0;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-partner-content-3 {
+  width: 88%;
+  margin: 0 auto;
+}
+
+.top-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  position: relative;
+
+
+}
+
+.top-3 div:first-child {
+  font-size: 12px;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    color: #8f8f8f;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.top-3 div:nth-child(2) {
+  font-size: 48px;
+  text-align: center;
+}
+
+.top-3 div:nth-child(3) {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 15px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.testimonial-container{
+  width: 100%;
+}
+.testimonial-slider{
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  column-gap: 40px;
+  grid-template-columns: repeat(3, 300px);
+  margin-bottom: 40px;
+  justify-content: center;
+
+}
+
+@media (max-width: 1020px) {
+  .testimonial-slider{
+    padding:0 20px;
+    justify-content: unset;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .testimonial-slider::-webkit-scrollbar{
+    display: none;
+  }
+
+}
+
+
